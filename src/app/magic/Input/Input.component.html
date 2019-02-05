@@ -47,22 +47,9 @@
         {{mg.getValue('Button6')}}
       </tag-button>
 
-  {{mg.getItemListValues('Combobox7') | json }}
 
-      <!--<div>-->
-        <!--<select-->
-          <!--magic="Combobox7"-->
-          <!--formControlName="Combobox7"-->
-        <!--&gt;-->
-          <!--<option-->
-            <!--*ngFor="let o of mg.getItemListValues('Combobox7');"-->
-            <!--[selected]="o.index == mg.getValue('Combobox7')"-->
-            <!--[value]="o.index"-->
-          <!--&gt;-->
-            <!--{{o.displayValue}}-->
-          <!--</option>-->
-        <!--</select>-->
-      <!--</div>-->
+
+
        formcontol
       {{screenFormGroup.get('Combobox7').value}}
       formcontol
@@ -71,7 +58,7 @@
       {{tagCombobox.value}}
       <tag-combobox
         placeholder='Enter a fruit'
-        value='2'
+
         magic="Combobox7"
         formControlName="Combobox7"
         text-field='displayValue'

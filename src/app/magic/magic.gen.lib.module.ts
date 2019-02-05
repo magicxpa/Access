@@ -28,15 +28,16 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { ComponentListMagicService, MagicModule, ExitMagicService } from "@magic-xpa/angular";
 import {magicGenComponents, magicGenCmpsHash, title} from './component-list.g';
 import { MagicAngularMaterialModule } from "@magic-xpa/angular-material-core";
-import {TagEditFielValueAccessor} from './tag-edit-field.ac.directive';
+import {TagInputFieldValueAccessor} from './tag-input-field.ac.directive';
 import {TagComboboxMagicDirective} from './tag-combobox.magic.directive';
+import {TagComboBoxValueAccessor} from './tag-combo-field.ac.directive';
 
 @NgModule({
   declarations: [
-    ...magicGenComponents, TagEditFielValueAccessor, TagComboboxMagicDirective
+    ...magicGenComponents, TagInputFieldValueAccessor, TagComboboxMagicDirective, TagComboBoxValueAccessor
   ],
   exports : [
-    ...magicGenComponents, TagEditFielValueAccessor, TagComboboxMagicDirective,
+    ...magicGenComponents, TagInputFieldValueAccessor, TagComboboxMagicDirective, TagComboBoxValueAccessor,
     MagicModule
   ],
   imports: [

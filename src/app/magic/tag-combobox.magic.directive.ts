@@ -12,10 +12,7 @@ import {GuiCommand, CommandType, HtmlProperties} from "@magic-xpa/gui";
 
 
 @Directive({
-  // tslint:disable-next-line:directive-selector
   selector: 'tag-combobox[magic]',
-
-
 })
 
 export class TagComboboxMagicDirective extends MagicDirective {
@@ -32,5 +29,6 @@ export class TagComboboxMagicDirective extends MagicDirective {
     if (command.CommandType === CommandType.SET_PROPERTY && command.Operation === HtmlProperties.ItemsList) {
       this.element.nativeElement.data = command.obj1;
     }
+
   }
 }
