@@ -1,0 +1,94 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="Input"
+        class="InputProps"
+    >
+
+
+      <tag-edit-field
+    label="Something"
+    editor="Textbox"
+    rows="3"
+    placeholder="Enter something"
+    magic="A"
+    formControlName="A"
+
+
+    id = 'testField'
+  >
+
+
+    </tag-edit-field>
+
+      <tag-edit-field
+        label="Something"
+        editor="Textbox"
+        rows="3"
+        placeholder="Enter something"
+
+        magic="B"
+        formControlName="B"
+
+      >
+      </tag-edit-field>
+
+
+      <tag-button
+        disabled
+        (click)="onClick()"
+
+        magic="Button6"
+
+      >
+        {{mg.getValue('Button6')}}
+      </tag-button>
+
+  {{mg.getItemListValues('Combobox7') | json }}
+
+      <!--<div>-->
+        <!--<select-->
+          <!--magic="Combobox7"-->
+          <!--formControlName="Combobox7"-->
+        <!--&gt;-->
+          <!--<option-->
+            <!--*ngFor="let o of mg.getItemListValues('Combobox7');"-->
+            <!--[selected]="o.index == mg.getValue('Combobox7')"-->
+            <!--[value]="o.index"-->
+          <!--&gt;-->
+            <!--{{o.displayValue}}-->
+          <!--</option>-->
+        <!--</select>-->
+      <!--</div>-->
+       formcontol
+      {{screenFormGroup.get('Combobox7').value}}
+      formcontol
+
+
+      {{tagCombobox.value}}
+      <tag-combobox
+        placeholder='Enter a fruit'
+        value='2'
+        magic="Combobox7"
+        formControlName="Combobox7"
+        text-field='displayValue'
+
+        value-field='index'>
+      </tag-combobox>
+
+    </div>
+
+
+  <button
+    magic="Button6"
+    [disabled]="mg.isDisabled('Button6' )"
+  >
+    {{mg.getValue('Button6')}}
+  </button>
+
+
+
+</div>

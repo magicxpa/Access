@@ -1,0 +1,11 @@
+{
+   "protocol": "http",
+   "server": "DESKTOP-C0AK1Q5",
+   "requester": "MagicScripts41/MGrqispi.dll",
+   "appname": "Access",
+   "LogClientSequenceForActivityMonitor": "N",
+   "InternalLogLevel": "",
+   "InternalLogSync": "Message",
+   "DisplayGenericError": "N",
+   "FirstHTTPRequestTimeout": "5"
+}

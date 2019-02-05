@@ -1,0 +1,11 @@
+{
+   "protocol": "http",
+   "server": "rinav-10.MSE.Corp",
+   "requester": "MagicScripts4/MGrqispi.dll",
+   "appname": "oded",
+   "LogClientSequenceForActivityMonitor": "N",
+   "InternalLogLevel": "",
+   "InternalLogSync": "Message",
+   "DisplayGenericError": "N",
+   "FirstHTTPRequestTimeout": "5"
+}

@@ -1,0 +1,95 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"Input",
+		"component_path":	"Input/",
+		"component_uniquename":	"Input_Input"
+	},
+	"coordinates":	null,
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"A:",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	13,
+				"width":	11,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"A",
+				"tab_order":	0,
+				"pattern":	"^.{0,10}$",
+				"attribute":	"A",
+				"common_line_id":	"line13"
+			},
+			"coordinates":	{
+				"x":	23,
+				"y":	13,
+				"width":	68,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label4",
+				"text":	"B:",
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	6,
+				"y":	44,
+				"width":	11,
+				"height":	14
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"B",
+				"tab_order":	0,
+				"pattern":	"^.{0,10}$",
+				"attribute":	"A",
+				"common_line_id":	"line44"
+			},
+			"coordinates":	{
+				"x":	23,
+				"y":	44,
+				"width":	68,
+				"height":	18
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		}
+	]
+}

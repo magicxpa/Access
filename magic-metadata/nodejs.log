@@ -1,0 +1,25 @@
+Generation output:
+
+D:\Magic\xpa41\Projects\Access\Web\Access>echo off 
+copying files
+
+
+
+D:\Magic\xpa41\Projects\Access\Web\Access>echo off 
+generating components
+[V-CLI] cmd.exe /c ng g @magic-xpa/cli:magic --skip-install
+Number of components to generate: 1,  params project: undefined theme: undefined allowTesting: undefined
+*** Step 1: Loading JSON files. ***
+[>] Loading JSON file Input/Input.json
+*** Step 2: Processing JSON files. ***
+[>] Processing JSON file for component Input
+*** Step 3: generate components. (1 components) ***
+[>] Step 4: components-list.
+UPDATE src/app/magic/Input/Input.component.ts (347 bytes)
+UPDATE src/app/magic/Input/Input.component.html (1637 bytes)
+UPDATE src/app/magic/Input/Input.component.css (146 bytes)
+UPDATE src/app/magic/component-list.g.ts (236 bytes)
+
+
+
+Generation warnings/errors:
