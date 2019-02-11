@@ -132,6 +132,41 @@
           }
         }
       }
+    },
+    "tagMagicComponents": {
+      "root": "projects/tag-magic-components",
+      "sourceRoot": "projects/tag-magic-components/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/tag-magic-components/tsconfig.lib.json",
+            "project": "projects/tag-magic-components/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/tag-magic-components/src/test.ts",
+            "tsConfig": "projects/tag-magic-components/tsconfig.spec.json",
+            "karmaConfig": "projects/tag-magic-components/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/tag-magic-components/tsconfig.lib.json",
+              "projects/tag-magic-components/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "Access"

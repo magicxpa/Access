@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "tag-magic-components": [
+        "dist/tag-magic-components"
+      ],
+      "tag-magic-components/*": [
+        "dist/tag-magic-components/*"
+      ]
+    }
   }
 }
