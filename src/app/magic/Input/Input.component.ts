@@ -13,7 +13,7 @@ import {FormControl} from '@angular/forms';
     templateUrl: './Input.component.html'
 }) export class Input extends TaskBaseMagicComponent {
 
-   tagCombobox:any;
+ //  tagCombobox:any;
   // bindMagic(name: string) {
   //     const selector = '[magic=\"' + name + '\"]';
   //     const element: any = document.querySelector(selector);
@@ -29,36 +29,36 @@ import {FormControl} from '@angular/forms';
   //
   // }
 
-  ngOnInit(): void {
-    console.log('creating form controls');
-    super.ngOnInit();
-    //this.bindMagic('A');
-    // this.bindMagic('B');
-    this.tagCombobox = document.querySelector('tag-combobox');
-    var btn: any = document.querySelector('tag-button');
-    btn.componentOnReady().then(() => {
-      btn.addEventListener('click', function() {
-       // alert('click');
-      });
-    });
-    this.tagCombobox.data = this.mg.getItemListValues('Combobox7');
-    // this.tagCombobox.data =      [
-    //   { id: 1, name: 'Banana' },
-    //   { id: 2, name: 'Apple' },
-    //   { id: 3, name: 'Orange' },
-    //   { id: 4, name: 'Kiwi' },
-    //   { id: 5, name: 'Strawberry' },
-    //   { id: 6, name: 'Blackberry' },
-    //   { id: 7, name: 'Blueberry' },
-    //   { id: 8, name: 'Cherry' },
-    //   { id: 9, name: 'Grape' },
-    //   { id: 10, name: 'Grapefruit' },
-    // ];
-
-  }
+  // ngOnInit(): void {
+  //   console.log('creating form controls');
+  //   super.ngOnInit();
+  //   //this.bindMagic('A');
+  //   // this.bindMagic('B');
+  //   this.tagCombobox = document.querySelector('tag-combobox');
+  //   var btn: any = document.querySelector('tag-button');
+  //   btn.componentOnReady().then(() => {
+  //     btn.addEventListener('click', function() {
+  //      // alert('click');
+  //     });
+  //   });
+  //   //this.tagCombobox.data = this.mg.getItemListValues('Combobox7');
+  //   // this.tagCombobox.data =      [
+  //   //   { id: 1, name: 'Banana' },
+  //   //   { id: 2, name: 'Apple' },
+  //   //   { id: 3, name: 'Orange' },
+  //   //   { id: 4, name: 'Kiwi' },
+  //   //   { id: 5, name: 'Strawberry' },
+  //   //   { id: 6, name: 'Blackberry' },
+  //   //   { id: 7, name: 'Blueberry' },
+  //   //   { id: 8, name: 'Cherry' },
+  //   //   { id: 9, name: 'Grape' },
+  //   //   { id: 10, name: 'Grapefruit' },
+  //   // ];
+  //
+  // }
 
   onClick(e){
-    this.tagCombobox.data = this.mg.getItemListValues('Combobox7');
+   // this.tagCombobox.data = this.mg.getItemListValues('Combobox7');
 
   }
 

@@ -30,6 +30,7 @@ import {magicGenComponents, magicGenCmpsHash, title} from './component-list.g';
 import { MagicAngularMaterialModule } from "@magic-xpa/angular-material-core";
 import {TagMagicComponentsModule} from '../../../projects/tag-magic-components/src/lib/tag-magic-components.module';
 
+
 @NgModule({
   declarations: [
     ...magicGenComponents

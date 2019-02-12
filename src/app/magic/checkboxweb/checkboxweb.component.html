@@ -1,0 +1,58 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="checkboxweb"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label1"
+                class="lable_overflow"
+            >
+                input:</label>
+            <div>
+                <input
+                    type='number'
+                    magic="input"
+                    mgFormat
+                />
+
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label3"
+                class="lable_overflow"
+            >
+                val:</label>
+            <div>
+                <div>
+                    <input
+                        type="checkbox"
+                        magic="val"
+                        id="val"
+                    />
+                    <label for="val">
+                        True,False</label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label4"
+                class="lable_overflow"
+            >
+                output:</label>
+            <div>
+                <input
+                    type='number'
+                    magic="output"
+                    mgFormat
+                />
+
+            </div>
+        </div>
+    </div>
+</div>
