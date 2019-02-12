@@ -1,0 +1,40 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="combo"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label3"
+                class="lable_overflow"
+            >
+                input</label>
+            <div>
+                <input
+                    type='number'
+                    magic="A"
+                    mgFormat
+                />
+
+            </div>
+        </div>
+      <tag-combobox
+        placeholder='Enter a value'
+        magic="Combobox7"
+        formControlName="Combobox7"
+        text-field='displayValue'
+        value-field='index'>
+      </tag-combobox>
+
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label5"
+                class="lable_overflow"
+            >
+                {{mg.getText('Label5')}}
+            </label></div>
+    </div>
+</div>

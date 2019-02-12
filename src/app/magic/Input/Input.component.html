@@ -38,7 +38,7 @@
 
 
       <tag-button
-        disabled
+        [disabled]="mg.isDisabled('Button6' )"
         (click)="onClick()"
 
         magic="Button6"
@@ -46,33 +46,6 @@
       >
         {{mg.getValue('Button6')}}
       </tag-button>
-
-
-
-
-       formcontol
-      {{screenFormGroup.get('Combobox7').value}}
-      formcontol
-
-
-
-      <tag-combobox
-        placeholder='Enter a fruit'
-        magic="Combobox7"
-        formControlName="Combobox7"
-        text-field='displayValue'
-        value-field='index'>
-      </tag-combobox>
-
-    </div>
-
-
-  <button
-    magic="Button6"
-    [disabled]="mg.isDisabled('Button6' )"
-  >
-    {{mg.getValue('Button6')}}
-  </button>
 
 
 
