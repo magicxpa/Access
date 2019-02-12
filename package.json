@@ -4,10 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build tagMagicComponents": "ng build tagMagicComponents",
+    "pack tagMagicComponents": "npm pack ./dist/tag-magic-components",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+
+
   },
   "private": true,
   "dependencies": {
